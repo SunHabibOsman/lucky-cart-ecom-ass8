@@ -7,7 +7,7 @@ const Home = () => {
     const [products, setProducts] = useState([])
     const [carts, setCart] = useState([])
 
-    const URL = `https://raw.githubusercontent.com/mdtomiz420/json-data/main/product.json`;
+    const URL = `product.json`;
     useEffect(() => {
         fetch(URL)
             .then(res => res.json())
